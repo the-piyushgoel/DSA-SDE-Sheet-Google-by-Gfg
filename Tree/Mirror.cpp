@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Node
+{
+public:
+    int data;
+    Node *left;
+    Node *right;
+
+    Node(int x)
+    {
+        data = x;
+        left = right = NULL;
+    }
+};
+
+class Solution
+{
+public:
+    void mirror(Node *root)
+    {
+        if (root == NULL)
+            return;
+        swap(root->left, root->right);
+        mirror(root->left);
+        mirror(root->right);
+    }
+};
