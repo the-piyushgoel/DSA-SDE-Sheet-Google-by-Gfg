@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int maxSubarraySum(vector<int> &arr)
 {
     int maxi = INT_MIN;
