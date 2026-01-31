@@ -9,8 +9,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-int celebrity(vector<vector<int>> &mat)
-{
+int celebrity(vector<vector<int>> &mat){
     int n = mat.size();
     int i = 0, j = n - 1;
     while (i < j)
